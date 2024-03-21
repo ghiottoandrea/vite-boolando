@@ -9,8 +9,9 @@ export default {
     <header>
         <nav>
             <div class="container">
+
                 <div class="left_menu">
-                    <ul>
+                    <ul class="list-unstyle">
                         <li>Uomo</li>
                         <li>Donna</li>
                         <li>Bambini</li>
@@ -24,9 +25,9 @@ export default {
                 <!-- /.logo -->
 
                 <div class="right_menu">
-                    <a href=""><i class="fa-regular fa-user">1</i></a>
-                    <a href=""><i class="fa-regular fa-heart"></i>2</a>
-                    <a href=""><i class="fa-solid fa-bag-shopping">3</i></a>
+                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
                 </div>
                 <!-- /.right_menu -->
 

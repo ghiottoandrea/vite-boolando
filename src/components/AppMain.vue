@@ -7,13 +7,27 @@ export default{
 <template>
 
 <main>
-    <div class="conatiner">
+    <div class="container">
         <div class="row">
+
             <div class="col-4">
                 <div class="card">
                     <img src="/images/1.webp" alt="">
                 </div>
             </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="/images/1.webp" alt="">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="/images/1.webp" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
 </main>
@@ -23,6 +37,6 @@ export default{
 <style>
 img{
     max-width: 100%;
-    
+
 }
 </style>
