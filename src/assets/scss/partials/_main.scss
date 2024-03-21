@@ -26,7 +26,8 @@
     z-index: 1;
 }
 
-.sostenibility {
+.sostenibility,
+.sostenibility-line {
     background-color: green;
     color: white;
     font-size: 12px;
@@ -38,17 +39,13 @@
 }
 
 .sostenibility-line {
-    background-color: green;
-    color: white;
-    font-size: small;
-    padding: 0.2rem;
-    position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     left: 0;
 }
 
 
-.heart:hover, .red-mark {
+.heart:hover,
+.red-mark {
     color: rgb(187, 16, 16);
 }
 
@@ -58,14 +55,12 @@
 
 .card_top_back_image {
     display: none;
-  }
-  
-  .card:hover .card_top_front_image {
+}
+
+.card:hover .card_top_front_image {
     display: none;
-  }
-  
-  .card:hover .card_top_back_image
-  {
+}
+
+.card:hover .card_top_back_image {
     display: block;
-  }
-  
+}

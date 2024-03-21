@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+footer {
+    background-color: $dark_color;
+    color: $lighter_color;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.info-links {
+    .links {
+        list-style: none;
+        display: flex;
+        gap: 0.5rem;
+        padding: 0;
+        a {
+            text-decoration: none;
+            color: $lighter_color;
+            padding-top: 0.3rem;
+        }
+    }
+}
+
+
+.social {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 20px;
+}
