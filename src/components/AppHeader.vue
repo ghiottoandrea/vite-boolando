@@ -7,11 +7,11 @@ export default {
 <template>
 
     <header>
-        <nav>
-            <div class="container">
+        <div class="container">
+            <nav>
 
                 <div class="left_menu">
-                    <ul class="list-unstyle">
+                    <ul>
                         <li>Uomo</li>
                         <li>Donna</li>
                         <li>Bambini</li>
@@ -31,11 +31,10 @@ export default {
                 </div>
                 <!-- /.right_menu -->
 
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
 </template>
 
-<style>
-</style>
+<style></style>

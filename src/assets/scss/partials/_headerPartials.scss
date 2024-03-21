@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+
+header {
+    background-color: $primary_color;
+}
+
+nav {
+    display: flex;
+}
+
+.left_menu {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    ul {
+        display: flex;
+        color: $lighter_color;
+        list-style: none;
+        gap: 0.5rem;
+        padding: 0;
+        align-self: end;
+    }
+}
+
+.logo {
+    width: 60%;
+    text-align: center;
+    padding: 0.5rem 0;
+img{
+    max-width: 100%;
+    height: 50px;
+}
+}
+
+.right_menu {
+    width: 20%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: end;
+
+    a{
+        color: $lighter_color;
+        text-decoration: none;
+    }
+}
