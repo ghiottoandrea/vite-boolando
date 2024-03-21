@@ -1,0 +1,71 @@
+@use './variables' as *;
+
+.card {
+    img {
+        position: relative;
+    }
+}
+
+.heart {
+    font-size: 30px;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: $dark_color;
+    z-index: 1;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 0.2rem;
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.sostenibility {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 0.2rem;
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    z-index: 1;
+}
+
+.sostenibility-line {
+    background-color: green;
+    color: white;
+    font-size: small;
+    padding: 0.2rem;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+
+.heart:hover, .red-mark {
+    color: rgb(187, 16, 16);
+}
+
+.line-throu {
+    text-decoration: line-through;
+}
+
+.card_top_back_image {
+    display: none;
+  }
+  
+  .card:hover .card_top_front_image {
+    display: none;
+  }
+  
+  .card:hover .card_top_back_image
+  {
+    display: block;
+  }
+  
