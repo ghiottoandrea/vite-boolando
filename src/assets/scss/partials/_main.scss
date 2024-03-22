@@ -6,7 +6,8 @@
     }
 }
 
-.heart {
+.heart,
+.heart-red {
     font-size: 30px;
     padding: 0 0.5rem;
     position: absolute;
@@ -16,38 +17,42 @@
     z-index: 1;
 }
 
-.discount {
-    background-color: red;
-    color: white;
-    font-size: 12px;
-    padding: 0.2rem;
-    position: absolute;
-    bottom: 80px;
-    z-index: 1;
+.heart-red {
+    color: rgb(187, 16, 16);
 }
-
-.sostenibility,
-.sostenibility-line {
-    background-color: green;
-    color: white;
-    font-size: 12px;
-    padding: 0.2rem;
-    position: absolute;
-    bottom: 80px;
-    left: 40px;
-    z-index: 1;
-}
-
-.sostenibility-line {
-    bottom: 80px;
-    left: 0;
-}
-
 
 .heart:hover,
 .red-mark {
     color: rgb(187, 16, 16);
 }
+
+.discount {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 0.2rem;
+}
+
+.sostenibility {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 0.2rem;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+}
+
+.prices {
+    display: flex;
+    gap: 0.5rem;
+}
+
 
 .line-throu {
     text-decoration: line-through;
