@@ -27,7 +27,7 @@ export default {
                 <span>{{ product.brand }}</span>
                 <h5>{{product.name}}</h5>
                 <div class="prices">
-                    <div class="red-mark"><b>{{ product.priceDiscounted }}$</b></div>
+                    <div class="red-mark"><b>{{(product.price - (product.price * product.discount/100)).toFixed(2)}}$</b></div>
                     <div v-if="product.discount" class="line-throu"> {{ product.price }}$</div>
                 </div>
             </div>
