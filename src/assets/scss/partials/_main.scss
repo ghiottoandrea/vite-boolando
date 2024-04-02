@@ -69,3 +69,7 @@
 .card:hover .card_top_back_image {
     display: block;
 }
+
+.card:hover {
+    cursor: pointer;
+}

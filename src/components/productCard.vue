@@ -1,16 +1,16 @@
 <script>
 export default {
     name: 'productCard',
-    props:{
+    props: {
         product: Object
     }
 }
 </script>
-
 <template>
 
     <div class="col-4">
-        <div class="card mt-3">
+         <div class="card mt-3" @click="$emit('showModal'(product))"
+> 
 
             <i v-if="product.isInFavorites" class="fa-solid fa-heart heart-red"></i>
             <i v-else class="fa-solid fa-heart heart"></i>
@@ -25,16 +25,16 @@ export default {
 
             <div class="body-card">
                 <span>{{ product.brand }}</span>
-                <h5>{{product.name}}</h5>
+                <h5>{{ product.name }}</h5>
                 <div class="prices">
-                    <div class="red-mark"><b>{{(product.price - (product.price * product.discount/100)).toFixed(2)}}$</b></div>
+                    <div class="red-mark"><b>{{ (product.price - (product.price *
+                product.discount / 100)).toFixed(2) }}$</b></div>
                     <div v-if="product.discount" class="line-throu"> {{ product.price }}$</div>
                 </div>
             </div>
 
         </div>
     </div>
-
 </template>
 
 <style></style>

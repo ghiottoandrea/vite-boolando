@@ -20,6 +20,10 @@ nav {
         gap: 0.5rem;
         padding: 0;
         align-self: end;
+        a{
+            text-decoration: none;
+            color: $lighter_color;
+        }
     }
 }
 

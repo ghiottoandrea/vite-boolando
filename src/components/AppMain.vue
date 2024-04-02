@@ -1,26 +1,38 @@
 <script>
 import productCard from './productCard.vue';
+import modalComponent from './modalComponent.vue';
 //import { products } from '../data.js';
+
 import { state } from '../state.js';
 import axios from 'axios';
 
 export default {
     name: `AppMain`,
     components: {
-        productCard
+        productCard,
+        modalComponent
     },
     data() {
         return {
             products: [],
-            state
+            state,
+            modalOpened: false,
+            modalProduct: ''
         }
     },
-    mounted(){
+    methods: {
+        showModal(product) {
+            this.modalOpened = true;
+
+            this.modalProduct = product;
+        }
+    },
+    mounted() {
         axios.get('http://localhost:3000/products')
-        .then(response => {
-            console.log(response)
-            this.products = response.data
-        })
+            .then(response => {
+                console.log(response)
+                this.products = response.data
+            })
     }
 }
 </script>
@@ -31,9 +43,12 @@ export default {
         <div class="container">
             <div class="row">
 
-                <productCard :product="product" :key="product.id" v-for="product in products" />
+                <productCard :product="product" :key="product.id" v-for="product in products" @showModal="showModal" />
 
+                <div v-if="modalOpened" class="my-modal">
+                    <modalComponent :product="modalProduct" />
 
+                </div>
             </div>
         </div>
     </main>

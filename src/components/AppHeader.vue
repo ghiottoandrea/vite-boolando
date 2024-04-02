@@ -12,9 +12,9 @@ export default {
 
                 <div class="left_menu">
                     <ul>
-                        <li>Uomo</li>
-                        <li>Donna</li>
-                        <li>Bambini</li>
+                        <a href="">Uomo</a>
+                        <a href="">Donna</a>
+                        <a href="">Bambini</a>
                     </ul>
                 </div>
                 <!-- /.left_menu -->
